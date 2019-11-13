@@ -1,9 +1,11 @@
+#define ISCO_DATA_LENGTH 210
+#define data_string 10
 Double getRainfall(){
 int comma = 0;
 double rainfall = 0; 
-char rainfall_number[10];
+char rainfall_number[data_string];
 // change these random integers into Macros
-for (int x = 0; x < 210; x++){
+for (int x = 0; x < ISCO_DATA_LENGTH; x++){
 char
 if (iscoData[x]==',')
 {
@@ -18,12 +20,6 @@ if (iscoData[x]==',')
 	Serial.println(iscoData[x + 4]);
       Serial.print("Water Level is ");
       return rainfall;
-
-
 }
-
 }
-
-
-
 }
